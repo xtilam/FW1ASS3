@@ -1,0 +1,26 @@
+@media (max-width: 575px) {
+  #navbar nav > * {
+    border: none !important;
+  }
+  .certificate-list {
+    grid-template-columns: 1fr;
+  }
+  .certificate-list li:nth-child(even)::after{
+    content: none;
+  }
+  .certificate-list li:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    background-color: #d6c08d;
+    height: 1px;
+    width: 100%;
+    bottom: -36px;
+  }
+  .project-box .info-1 {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+  .project-box .info-1 > *{
+    grid-column: 1 !important;
+  }
+}
